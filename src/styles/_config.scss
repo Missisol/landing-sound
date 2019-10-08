@@ -1,0 +1,53 @@
+@import "variables";
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+}
+
+@include desktop() {
+  .container {
+    max-width: $widthContainerDesktop;
+  }
+}
+
+svg path {
+  fill: inherit;
+}

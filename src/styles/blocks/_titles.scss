@@ -1,0 +1,56 @@
+@import '../variables';
+
+.big-text-wrap {
+  position: absolute;
+  top: 71.6%;
+  left: 40.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.big-text {
+  position: relative;
+  z-index: 10;
+  @include bigTitle;
+  font-size: 4.5em;
+  margin-bottom: 0.6em;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+
+  &:hover .big-text__image-wrap {
+    display: flex;
+  }
+
+  &:hover .big-text__arrow {
+    fill: $colorBlack;
+  }
+
+  &__wrap {
+    position: relative;
+    display: flex;
+  }
+
+  &__image-wrap {
+    position: absolute;
+    right: -222px;
+    top: -70px;
+    display: flex;
+    align-items: flex-end;
+    max-width: 460px;
+  }
+
+  &__image-text {
+    margin-left: 8px;
+    font-size: 18px;
+    line-height: 17px;
+  }
+}
+
+.big-text:hover #image-wrap {
+  display: flex;
+}

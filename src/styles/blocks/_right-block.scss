@@ -1,0 +1,60 @@
+@import '../variables';
+
+.right-block {
+  flex: 1;
+  padding-top: 636px;
+
+  &__media {
+    white-space: pre-wrap;
+    font-weight: 600;
+    font-size: 2.25em;
+    line-height: 1.25em;
+    color: $colorText;
+
+    &_one {
+      margin-bottom: 1096px;
+    }
+
+    &_two {
+      margin-bottom: 828px;
+    }
+
+    &_three {
+      font-size: 4em;
+      font-weight: normal;
+    }
+  }
+
+  &__sound {
+    display: flex;
+    justify-content: space-between;
+
+    &_items-six {
+      margin-bottom: 241px;
+    }
+
+    &_items-two {
+      margin-bottom: 1687px;
+    }
+  }
+
+  &__part {
+    flex-basis: 46%;
+  }
+
+  &__item {
+    margin-bottom: 176px;
+  }
+
+  &__item-title {
+    font-size: 1.5em;
+    color: $colorTitle;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+  }
+
+  &__item-text {
+    line-height: 1.612em;
+    font-size: 1.125em;
+  }
+}
