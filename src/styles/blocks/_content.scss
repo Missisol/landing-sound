@@ -1,0 +1,46 @@
+@import '../variables';
+
+.block {
+  display: flex;
+
+  &__sound {
+    padding-top: 880px;
+  }
+
+  &__video {
+    padding-top: 450px;
+  }
+
+  &__podcast {
+    padding-top: 835px;
+  }
+
+  &__project {
+    padding-top: 350px;
+  }
+
+  &__you {
+    padding-top: 560px;
+  }
+}
+
+.leftBlock {
+  flex-basis: 35%;
+
+  &__sound {
+    padding-top: 145px;
+  }
+
+  &__project {
+    padding-top: 348px;
+  }
+
+  &__you {
+    padding-top: 50px;
+  }
+}
+
+#pin6 {
+  height: 1px;
+  margin-bottom: 10px;
+}

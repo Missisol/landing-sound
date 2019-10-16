@@ -2,40 +2,35 @@
 
 .right-block {
   flex: 1;
-  padding-top: 636px;
+  //padding-top: 636px;
 
-  &__media {
-    white-space: pre-wrap;
+  &__singletext {
     font-weight: 600;
     font-size: 2.25em;
     line-height: 1.25em;
     color: $colorText;
 
-    &_one {
-      margin-bottom: 1096px;
-    }
-
-    &_two {
-      margin-bottom: 828px;
-    }
-
-    &_three {
-      font-size: 4em;
-      font-weight: normal;
+    &_media {
+      padding-top: 159px;
     }
   }
 
   &__sound {
     display: flex;
+    flex-direction: column;
+  }
+
+  &__podсast {
+    display: flex;
     justify-content: space-between;
+    padding-top: 38px;
+  }
 
-    &_items-six {
-      margin-bottom: 241px;
-    }
-
-    &_items-two {
-      margin-bottom: 1687px;
-    }
+  &__you {
+    font-size: 4em;
+    line-height: 1.3em;
+    color: $colorText;
+    margin-bottom: 483px;
   }
 
   &__part {
@@ -43,12 +38,14 @@
   }
 
   &__item {
-    margin-bottom: 176px;
+    margin-bottom: 5.3em;
+
   }
 
   &__item-title {
-    font-size: 1.5em;
-    color: $colorTitle;
+    @include title;
+    font-size: 4em;
+    line-height: 1.2em;
     text-transform: capitalize;
     margin-bottom: 18px;
   }

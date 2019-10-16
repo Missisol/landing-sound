@@ -3,19 +3,23 @@
 .big-wrap {
   position: relative;
   width: 100%;
-  height: 7190px;
   background: $colorWhite;
   display: flex;
   flex-direction: column;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
+.bcg-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/images/bcg-image.jpg) no-repeat;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.leftBlock {
-  flex-basis: 35%;
+.content {
+  display: flex;
+  flex-direction: column;
   padding-top: 523px;
 }
 
@@ -28,26 +32,6 @@
     left: (100% -1200px);
     z-index: 100;
   }
-
-  &_media {
-    margin-bottom: 1458px;
-  }
-
-  &_sound {
-    margin-bottom: 1455px;
-  }
-
-  &_video {
-    margin-bottom: 976px;
-  }
-
-  &_podcast {
-    margin-bottom: 926px;
-  }
-
-  &_project {
-    margin-bottom: 1170px;
-  }
 }
 
 .links {
@@ -56,6 +40,7 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 10;
   top: 950px;
 
   &__right {

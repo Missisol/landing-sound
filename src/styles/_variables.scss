@@ -86,16 +86,20 @@ $widthContainerDesktop: 1200px;
   }
 }
 
+@mixin druk {
+  font-family: 'Druk Wide Medium', sans-serif;
+}
+
 @mixin title {
   @include druk;
   font-weight: 500;
   color: $colorWhite;
   mix-blend-mode: difference;
-  text-transform: uppercase;
 }
 
 @mixin subtitle {
   @include title;
+  text-transform: uppercase;
   font-size: 2em;
   line-height: 1.25em;
 }
@@ -104,6 +108,3 @@ $widthContainerDesktop: 1200px;
   @include title;
 }
 
-@mixin druk {
-  font-family: 'Druk Wide Medium', sans-serif;
-}

@@ -1,12 +1,18 @@
 @import '../variables';
 
 .big-text-wrap {
-  position: absolute;
-  top: 71.6%;
-  left: 40.7%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  //margin-top: 261px;
+
+  &:hover #wrapper {
+    display: flex;
+  }
+
+  &:hover .big-text__arrow-wrap {
+    z-index: 10;
+  }
 }
 
 .big-text {
@@ -22,12 +28,15 @@
     text-decoration-line: underline;
   }
 
-  &:hover .big-text__image-wrap {
-    display: flex;
+  &__arrow-wrap {
+    position: absolute;
+    top: 27%;
+    right: 44%;
   }
 
-  &:hover .big-text__arrow {
+  &__arrow {
     fill: $colorBlack;
+    //mix-blend-mode: difference;
   }
 
   &__wrap {
@@ -37,9 +46,9 @@
 
   &__image-wrap {
     position: absolute;
-    right: -222px;
+    right: -346px;
     top: -70px;
-    display: flex;
+    display: none;
     align-items: flex-end;
     max-width: 460px;
   }
@@ -51,6 +60,4 @@
   }
 }
 
-.big-text:hover #image-wrap {
-  display: flex;
-}
+
