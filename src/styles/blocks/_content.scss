@@ -3,24 +3,27 @@
 .block {
   display: flex;
 
+  &__media {
+    margin-bottom: 880px;
+  }
+
   &__sound {
-    padding-top: 880px;
+    margin-bottom: 450px;
   }
 
   &__video {
-    padding-top: 450px;
+    margin-bottom: 835px;
   }
 
   &__podcast {
-    padding-top: 835px;
+    margin-bottom: 350px;
   }
 
   &__project {
-    padding-top: 350px;
+    margin-bottom: 560px;
   }
 
   &__you {
-    padding-top: 560px;
   }
 }
 
@@ -39,5 +42,6 @@
     padding-top: 50px;
   }
 }
+
 
 
