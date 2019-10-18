@@ -34,7 +34,6 @@ function cross(elem) {
     const elemTop = elem.getBoundingClientRect().top;
     const elemBottom = elem.getBoundingClientRect().bottom;
 
-
     if (isVisible(elem)) {
         if (elemTop <= fixedBottom && elemBottom >= fixedTop) {
             bcgImage.classList.remove('invisible');
@@ -49,13 +48,15 @@ function cross(elem) {
 function getElem() {
     const elems = document.querySelectorAll('.subtitle_scroll');
 
-    const fixed = document.querySelector('.subtitle_fixed');
+    const elemFixed = document.querySelector('.subtitle_fixed');
+    const elemYou = document.querySelector('.subtitle_you');
+    console.log(elemYou);
 
 
     for (let elem of elems) {
-        if (!elem.classList.contains('fixed'))  {
+        // if (!elem.classList.contains('fixed'))  {
+        if (elem !== elemYou)  {
             if (isVisible(elem)) {
-                console.log(elem, isVisible(elem));
                 cross(elem);
             }
         }

@@ -53,11 +53,20 @@ $(function () { // wait for document ready
         .addTo(controller);
 
     var scene6 = new ScrollMagic.Scene({
-        triggerElement: "#trigger6",
-        // offset: 450,
+        triggerElement: "#pin6",
+        offset: -100,
         // offset: 795
     })
         .setPin("#pin6")
         // .addIndicators({name: "6 (duration: )"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+    var scene7 = new ScrollMagic.Scene({
+        triggerElement: "#pin7",
+        offset: -100,
+        // offset: 795
+    })
+        .setPin("#pin7")
+        // .addIndicators({name: "7 (duration: )"}) // add indicators (requires plugin)
         .addTo(controller);
 });
