@@ -5,8 +5,8 @@
 
   &__singletext {
     font-weight: 600;
-    font-size: 2.25em;
-    line-height: 1.25em;
+    font-size: 36px;
+    line-height: 45px;
     color: $color-text;
 
     @include tablet {
@@ -25,15 +25,8 @@
 
   &__sound {
     display: flex;
+    flex-direction: column;
 
-    @include desktop {
-      flex-direction: column;
-    }
-
-    @include tablet {
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
   }
 
   &__podсast {
@@ -43,8 +36,8 @@
   }
 
   &__you {
-    font-size: 4em;
-    line-height: 1.3em;
+    font-size: 64px;
+    line-height: 80px;
     color: $color-text;
     margin-bottom: 483px;
   }
@@ -60,34 +53,53 @@
     }
 
     @include tablet {
-      flex-basis: 46%;
       margin-bottom: 3.5em;
     }
   }
 
   &__item-title {
     text-transform: capitalize;
+    @include title;
 
     @include desktop {
-      @include title;
       font-size: 64px;
       line-height: 78px;
       margin-bottom: 18px;
     }
 
     @include tablet {
-      font-size: 24px;
-      line-height: 20px;
-      color: $color-title;
-      margin-bottom: 20px;
+      font-size: 37px;
+      line-height: 45px;
+      margin-bottom: 10px;
     }
   }
 
   &__item-text {
-    line-height: 29px;
+
+    @include desktop {
+      line-height: 29px;
+    }
+
+    @include tablet {
+      font-size: 11px;
+      line-height: 18px;
+
+      &_podcast {
+        font-size: 18px;
+        line-height: 29px;
+      }
+    }
+  }
+
+  &__wrap {
+
+    @include desktop {
+      width: 780px;
+    }
+
+    @include tablet {
+      width: 470px;
+    }
   }
 }
 
-.wrap {
-  width: 780px;
-}

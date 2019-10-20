@@ -48,9 +48,12 @@
     }
   }
 
-  &_you {
-    width: 420px;
-  }
+  //&_you {
+  //
+  //  @include desktop {
+  //    //width: 420px;
+  //  }
+  //}
 }
 
 .links {

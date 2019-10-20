@@ -4,15 +4,18 @@
   display: flex;
 
   &__media {
-    margin-bottom: 880px;
 
     @include desktop {
+      margin-bottom: 880px;
+
       &_tablet {
         display: none;
       }
     }
 
     @include tablet {
+      margin-bottom: 270px;
+
       &_desktop {
         display: none;
       }
@@ -20,7 +23,82 @@
   }
 
   &__sound {
-    margin-bottom: 450px;
+
+    @include desktop {
+      margin-bottom: 450px;
+
+      &_tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 346px;
+
+      &_desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__video {
+
+    @include desktop {
+      margin-bottom: 835px;
+
+      &_tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 600px;
+
+      &_desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__podcast {
+
+    @include desktop {
+      margin-bottom: 350px;
+
+      &_tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 448px;
+
+      &_desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__project {
+
+    @include desktop {
+      margin-bottom: 560px;
+
+      &_tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 474px;
+
+      &_desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__you {
 
     @include desktop {
       &_tablet {
@@ -34,19 +112,6 @@
       }
     }
   }
-
-  &__video {
-    margin-bottom: 835px;
-  }
-
-  &__podcast {
-    margin-bottom: 350px;
-  }
-
-  &__project {
-    margin-bottom: 560px;
-  }
-
 }
 
 .leftBlock {
@@ -64,15 +129,28 @@
     @include desktop {
       padding-top: 145px;
     }
-
   }
 
   &__project {
-    padding-top: 348px;
+
+    @include desktop {
+      padding-top: 348px;
+    }
+
+    @include tablet {
+      padding-top: 16px;
+    }
   }
 
   &__you {
-    padding-top: 50px;
+
+    @include desktop {
+      padding-top: 50px;
+    }
+
+    @include tablet {
+      padding-top: 100px;
+    }
   }
 }
 

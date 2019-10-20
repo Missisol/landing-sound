@@ -18,7 +18,6 @@
   }
 }
 
-
 @mixin druk {
   font-family: 'Druk Wide Medium', sans-serif;
 }
@@ -33,17 +32,13 @@
 
 @mixin subtitle {
   @include title;
-  font-size: 2em;
-  line-height: 1.25em;
+  font-size: 32px;
+  line-height: 39px;
 }
 
 @mixin subtitle-tablet {
   @include title;
-  font-size: 1.4em;
-  line-height: 1.3em;
-}
-
-@mixin big-title {
-  @include title;
+  font-size: 25px;
+  line-height: 30px;
 }
 

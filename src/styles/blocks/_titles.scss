@@ -3,11 +3,19 @@
 .big-text {
   position: relative;
   z-index: 10;
-  @include big-title;
-  font-size: 4.5em;
-  margin-bottom: 0.6em;
+  @include title;
   cursor: pointer;
   transition: 0.3s;
+
+  @include desktop {
+    font-size: 72px;
+    margin-bottom: 0.6em;
+  }
+
+  @include tablet {
+    font-size: 36px;
+    margin-bottom: 85px;
+  }
 
   &__container {
     display: flex;
@@ -26,16 +34,11 @@
     mix-blend-mode: difference;
   }
 
-  &__arrow {
-    fill: $color-black;
-    //mix-blend-mode: difference;
-  }
-
   &__wrap {
     position: relative;
     display: flex;
 
-    &:hover #wrapper {
+    &:hover .big-text__image-wrap {
       display: flex;
     }
 
@@ -45,12 +48,20 @@
   }
 
   &__image-wrap {
-    position: absolute;
-    right: -346px;
-    top: -70px;
     display: none;
-    align-items: flex-end;
-    max-width: 460px;
+
+    @include desktop {
+      position: absolute;
+      right: -346px;
+      top: -70px;
+      max-width: 460px;
+      align-items: flex-end;
+    }
+
+    @include tablet {
+      top: 0;
+      right: 0;
+    }
   }
 
   &__image-text {
