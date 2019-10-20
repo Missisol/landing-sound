@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url(../assets/fonts/SourceSansPro-Regular.ttf);
+  src: url(../assets/fonts/SourceSansPro-Regular.ttf) format('ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url(../assets/fonts/SourceSansPro-SemiBold.ttf);
+  src: url(../assets/fonts/SourceSansPro-SemiBold.ttf) format('ttf');
   font-weight: 600;
 }
 
@@ -65,8 +65,10 @@ $colorText: #4D4D4D;
 $colorTitle: #909090;
 
 $widthFullDesktop: 1400px;
+$widthFullTablet: 1024px;
 
 $widthContainerDesktop: 1200px;
+$widthContainerTablet: 1200px;
 
 //@mixin phone {
 //  @media screen and (min-width: $widthFullPhone) and (max-width: $widthFullTablet - 1px) {
