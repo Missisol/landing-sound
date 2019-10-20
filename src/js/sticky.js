@@ -8,7 +8,16 @@ $(function () { // wait for document ready
         offset: -30
     })
         .setPin("#pin1")
-        // .addIndicators({name: "1 (duration: 500)"}) // add indicators (requires plugin)
+        .addIndicators({name: "1 (duration: 500)"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+    var scene11 = new ScrollMagic.Scene({
+        triggerElement: "#trigger11",
+        duration: 600,
+        offset: 295
+    })
+        .setPin("#pin11")
+        .addIndicators({name: "11 (duration: 750)"}) // add indicators (requires plugin)
         .addTo(controller);
 
     var scene2 = new ScrollMagic.Scene({
@@ -17,6 +26,15 @@ $(function () { // wait for document ready
         offset: 120
     })
         .setPin("#pin2")
+        // .addIndicators({name: "2 (duration: 2000)"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+    var scene22 = new ScrollMagic.Scene({
+        triggerElement: "#trigger2",
+        duration: 1000,
+        offset: 120
+    })
+        .setPin("#pin22")
         // .addIndicators({name: "2 (duration: 2000)"}) // add indicators (requires plugin)
         .addTo(controller);
 

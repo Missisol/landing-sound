@@ -1,9 +1,9 @@
-@import '../variables';
+@import '../mixines';
 
 .big-wrap {
   position: relative;
   width: 100%;
-  background: $colorWhite;
+  background: $color-white;
   display: flex;
   flex-direction: column;
 }
@@ -21,16 +21,31 @@
   display: flex;
   flex-direction: column;
   padding-top: 523px;
+
+  @include tablet {
+    padding-top: 60px;
+  }
 }
 
 .subtitle {
-  @include subtitle;
+
+  @include desktop {
+    @include subtitle;
+  }
+
+  @include tablet {
+    @include subtitle-tablet;
+  }
 
   &_fixed {
     position: fixed;
     top: 447px;
-    left: (100% -1200px);
+    left: calc((100% - #{$desktop-container}) / 2);
     z-index: 100;
+
+    @include tablet {
+      left: calc((100% - #{$tablet-container}) / 2);
+    }
   }
 
   &_you {
@@ -39,24 +54,41 @@
 }
 
 .links {
-  width: 92%;
-  margin: 0 4%;
   display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 10;
-  //top: 950px;
-  bottom: 5%;
+
+  @include desktop {
+    width: 92%;
+    margin: 0 4%;
+    bottom: 5%;
+  }
+
+  @include tablet {
+    flex-direction: column-reverse;
+    bottom: 9%;
+    left: calc((100% - #{$tablet-container}) / 2);
+  }
 
   &__right {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__link {
     @include druk;
-    color: $colorBlack;
-    font-size: 18px;
-    line-height: 22px;
+    color: $color-black;
+    font-size: 1em;
+    line-height: 1.2px;
+    mix-blend-mode: difference;
+
+    @include tablet {
+      margin-top: 3.1em;
+    }
 
     &_email {
       left: 10%;
@@ -64,6 +96,10 @@
 
     &_cloud {
       margin-left: 38px;
+
+      @include tablet {
+        margin-left: 0;
+      }
     }
   }
 }

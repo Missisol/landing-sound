@@ -1,8 +1,11 @@
-@import "variables";
+@import 'variables';
+@import 'mixines';
 
 html,
 body {
   height: 100%;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 * {
@@ -40,13 +43,20 @@ select {
 .container {
   position: relative;
   margin: 0 auto;
-}
 
-@include desktop() {
-  .container {
-    max-width: $widthContainerDesktop;
+  @include desktop() {
+    max-width: $desktop-container;
+  }
+
+  @include tablet() {
+    max-width: $tablet-container;
+  }
+
+  @include phone() {
+    max-width: $phone-container;
   }
 }
+
 
 svg path {
   fill: inherit;
@@ -56,7 +66,3 @@ svg path {
   opacity: 0;
 }
 
-//.fixed {
-//  position: fixed;
-//  z-index: 100;
-//}

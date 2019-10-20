@@ -1,0 +1,49 @@
+@import 'variables';
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (min-width: $phone-width) and (max-width: $tablet-width - 1px) {
+    @content;
+  }
+}
+
+
+@mixin druk {
+  font-family: 'Druk Wide Medium', sans-serif;
+}
+
+@mixin title {
+  @include druk;
+  font-weight: 500;
+  color: $color-white;
+  mix-blend-mode: difference;
+  text-transform: uppercase;
+}
+
+@mixin subtitle {
+  @include title;
+  font-size: 2em;
+  line-height: 1.25em;
+}
+
+@mixin subtitle-tablet {
+  @include title;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+
+@mixin big-title {
+  @include title;
+}
+

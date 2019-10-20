@@ -59,54 +59,17 @@ $normalize-vertical-rhythm: false !default;
 
 // Customer settings
 
-$colorBlack: #000000;
-$colorWhite: #ffffff;
-$colorText: #4D4D4D;
-$colorTitle: #909090;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-text: #4D4D4D;
+$color-title: #909090;
 
-$widthFullDesktop: 1400px;
-$widthFullTablet: 1024px;
+$desktop-width: 1400px;
+$tablet-width: 1024px;
+$phone-width: 320px;
 
-$widthContainerDesktop: 1200px;
-$widthContainerTablet: 1200px;
+$desktop-container: 1200px;
+$tablet-container: 698px;
+$phone-container: 260px;
 
-//@mixin phone {
-//  @media screen and (min-width: $widthFullPhone) and (max-width: $widthFullTablet - 1px) {
-//    @content;
-//  }
-//}
-//
-//@mixin tablet {
-//  @media screen and (min-width: $widthFullTablet) and (max-width: $widthFullDesktop - 1px) {
-//    @content;
-//  }
-//}
-
-@mixin desktop {
-  @media screen and (min-width: $widthFullDesktop) {
-    @content;
-  }
-}
-
-@mixin druk {
-  font-family: 'Druk Wide Medium', sans-serif;
-}
-
-@mixin title {
-  @include druk;
-  font-weight: 500;
-  color: $colorWhite;
-  mix-blend-mode: difference;
-}
-
-@mixin subtitle {
-  @include title;
-  text-transform: uppercase;
-  font-size: 2em;
-  line-height: 1.25em;
-}
-
-@mixin bigTitle {
-  @include title;
-}
 
