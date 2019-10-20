@@ -2,8 +2,7 @@
 
 const {watch, series, parallel, src, dest, lastRun} = require('gulp');
 const path = require('path');
-const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
+const sass = require('gulp-dart-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const bs = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
@@ -19,6 +18,7 @@ const newer = require('gulp-newer');
 const cached = require('gulp-cached');
 const del = require('del');
 const notify = require('gulp-notify');
+const gcmq = require('gulp-group-css-media-queries');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 
@@ -61,6 +61,7 @@ function styles() {
         .pipe(remember('styles'))
         .pipe(gulpIf(isDevelopment, sourcemaps.write()))
         .pipe(gulpIf(!isDevelopment, cleanCSS()))
+        .pipe(gulpIf(!isDevelopment, gcmq()))
         .pipe(dest(paths.styles.dest))
 }
 
