@@ -6,8 +6,6 @@ function isVisible(elem) {
     let windowHeight = document.documentElement.clientHeight;
 
     return  coords.top > 0 && coords.top < windowHeight;
-
-    // return topVisible;
 }
 
 function cross(elem) {
