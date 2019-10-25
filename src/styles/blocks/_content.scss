@@ -2,6 +2,7 @@
 
 .block {
   display: flex;
+  position: relative;
 
   &__media {
 
@@ -116,11 +117,12 @@
 
 .leftBlock {
   min-width: 35%;
+  position: relative;
 
   &__media {
 
     @include tablet {
-      padding-top: 310px;
+      //padding-top: 310px;
     }
   }
 
