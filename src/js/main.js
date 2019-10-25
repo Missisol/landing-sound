@@ -13,7 +13,7 @@ function isVisible(elem) {
 function cross(elem) {
     const bcgImage = document.querySelector('.bcg-image');
 
-    const fixed = document.querySelector('.subtitle_fixed');
+    const fixed = document.querySelector('.subtitle__fixed');
     const fixedBottom = fixed.getBoundingClientRect().bottom;
     const fixedTop = fixed.getBoundingClientRect().top;
 
@@ -32,7 +32,7 @@ function cross(elem) {
 
 
 function getElem() {
-    const elems = document.querySelectorAll('.subtitle_scroll.Zebra_Pin_Contained');
+    const elems = document.querySelectorAll('.subtitle_scroll .Zebra_Pin_Contained');
 
     for (let elem of elems) {
             if (isVisible(elem)) {

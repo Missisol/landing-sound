@@ -24,6 +24,10 @@
   @include tablet {
     padding-top: 60px;
   }
+
+  @include phone {
+    padding-top: 135px;
+  }
 }
 
 .subtitle {
@@ -37,16 +41,24 @@
     @include subtitle-tablet;
   }
 
-  &_fixed {
+  @include phone {
+    @include subtitle-phone;
+  }
+
+  &__fixed {
     position: relative;
-    margin-top: 447px;
     z-index: 100;
+
+    @include desktop {
+      margin-top: 447px;
+    }
 
     @include tablet {
       margin-top: 90px;
     }
   }
 }
+
 
 .links {
   display: flex;
@@ -66,10 +78,20 @@
     left: calc((100% - #{$tablet-container}) / 2);
   }
 
+  @include phone {
+    flex-direction: column-reverse;
+    bottom: 9%;
+    left: calc((100% - #{$phone-container}) / 2);
+  }
+
   &__right {
     display: flex;
 
     @include tablet {
+      flex-direction: column;
+    }
+
+    @include phone {
       flex-direction: column;
     }
   }
@@ -85,6 +107,12 @@
       margin-top: 3.1em;
     }
 
+    @include phone {
+      margin-top: 10px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
     &_email {
       left: 10%;
     }
@@ -93,6 +121,10 @@
       margin-left: 38px;
 
       @include tablet {
+        margin-left: 0;
+      }
+
+      @include phone {
         margin-left: 0;
       }
     }

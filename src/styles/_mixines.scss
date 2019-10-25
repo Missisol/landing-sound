@@ -42,3 +42,9 @@
   line-height: 30px;
 }
 
+@mixin subtitle-phone {
+  @include title;
+  font-size: 13px;
+  line-height: 16px;
+}
+

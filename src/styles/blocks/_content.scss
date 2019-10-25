@@ -9,7 +9,8 @@
     @include desktop {
       margin-bottom: 880px;
 
-      &_tablet {
+      &_tablet,
+      &_phone {
         display: none;
       }
     }
@@ -17,7 +18,17 @@
     @include tablet {
       margin-bottom: 270px;
 
-      &_desktop {
+      &_desktop,
+      &_phone {
+        display: none;
+      }
+    }
+
+    @include phone {
+      //margin-bottom: 190px;
+
+      &_desktop,
+      &_tablet {
         display: none;
       }
     }
