@@ -28,6 +28,7 @@
 }
 
 .subtitle {
+  position: absolute;
 
   @include desktop {
     @include subtitle;
@@ -38,9 +39,11 @@
   }
 
   &_fixed {
-    position: fixed;
-    top: 447px;
-    left: calc((100% - #{$desktop-container}) / 2);
+    position: relative;
+    //position: fixed;
+    margin-top: 447px;
+    //top: 447px;
+    //left: calc((100% - #{$desktop-container}) / 2);
     z-index: 100;
 
     @include tablet {
