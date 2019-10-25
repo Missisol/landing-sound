@@ -32,7 +32,7 @@ function cross(elem) {
 
 
 function getElem() {
-    const elems = document.querySelectorAll('.subtitle_scroll');
+    const elems = document.querySelectorAll('.subtitle_scroll.Zebra_Pin_Contained');
 
     for (let elem of elems) {
             if (isVisible(elem)) {
