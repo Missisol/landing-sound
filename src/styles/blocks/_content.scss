@@ -4,6 +4,10 @@
   display: flex;
   position: relative;
 
+  @include phone {
+    justify-content: space-between;
+  }
+
   &__media {
 
     @include desktop {
@@ -25,7 +29,7 @@
     }
 
     @include phone {
-      //margin-bottom: 190px;
+      margin-bottom: 140px;
 
       &_desktop,
       &_tablet {
@@ -39,7 +43,8 @@
     @include desktop {
       margin-bottom: 450px;
 
-      &_tablet {
+      &_tablet,
+      &_phone {
         display: none;
       }
     }
@@ -47,7 +52,17 @@
     @include tablet {
       margin-bottom: 346px;
 
-      &_desktop {
+      &_desktop,
+      &_phone{
+        display: none;
+      }
+    }
+
+    @include phone {
+      margin-bottom: 180px;
+
+      &_desktop,
+      &_tablet {
         display: none;
       }
     }
@@ -58,7 +73,8 @@
     @include desktop {
       margin-bottom: 835px;
 
-      &_tablet {
+      &_tablet,
+      &_phone {
         display: none;
       }
     }
@@ -66,7 +82,17 @@
     @include tablet {
       margin-bottom: 600px;
 
-      &_desktop {
+      &_desktop,
+      &_phone{
+        display: none;
+      }
+    }
+
+    @include phone {
+      margin-bottom: 48px;
+
+      &_desktop,
+      &_tablet {
         display: none;
       }
     }
@@ -77,7 +103,8 @@
     @include desktop {
       margin-bottom: 350px;
 
-      &_tablet {
+      &_tablet,
+      &_phone {
         display: none;
       }
     }
@@ -85,7 +112,17 @@
     @include tablet {
       margin-bottom: 448px;
 
-      &_desktop {
+      &_desktop,
+      &_phone{
+        display: none;
+      }
+    }
+
+    @include phone {
+      margin-bottom: 90px;
+
+      &_desktop,
+      &_tablet {
         display: none;
       }
     }
@@ -96,7 +133,8 @@
     @include desktop {
       margin-bottom: 560px;
 
-      &_tablet {
+      &_tablet,
+      &_phone {
         display: none;
       }
     }
@@ -104,22 +142,44 @@
     @include tablet {
       margin-bottom: 474px;
 
-      &_desktop {
+      &_desktop,
+      &_phone{
+        display: none;
+      }
+    }
+
+    @include phone {
+      margin-bottom: 200px;
+
+      &_desktop,
+      &_tablet {
         display: none;
       }
     }
   }
 
   &__you {
+    margin-bottom: 483px;
 
     @include desktop {
-      &_tablet {
+      &_tablet,
+      &_phone {
         display: none;
       }
     }
 
     @include tablet {
-      &_desktop {
+      &_desktop,
+      &_phone{
+        display: none;
+      }
+    }
+
+    @include phone {
+      margin-bottom: 500px;
+
+      &_desktop,
+      &_tablet {
         display: none;
       }
     }

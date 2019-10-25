@@ -27,23 +27,25 @@
   font-weight: 500;
   color: $color-white;
   mix-blend-mode: difference;
-  text-transform: uppercase;
 }
 
 @mixin subtitle {
   @include title;
+  text-transform: uppercase;
   font-size: 32px;
   line-height: 39px;
 }
 
 @mixin subtitle-tablet {
   @include title;
+  text-transform: uppercase;
   font-size: 25px;
   line-height: 30px;
 }
 
 @mixin subtitle-phone {
   @include title;
+  text-transform: uppercase;
   font-size: 13px;
   line-height: 16px;
 }

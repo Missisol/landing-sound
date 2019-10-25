@@ -40,6 +40,10 @@ select {
   outline: none;
 }
 
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .container {
   position: relative;
   margin: 0 auto;

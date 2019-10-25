@@ -35,6 +35,10 @@ $(document).ready(function () {
         top_spacing: 527,
     });
 
+    const pin7 = new $.Zebra_Pin($('#pin7'), {
+        top_spacing: 527,
+    });
+
     const pin11 = new $.Zebra_Pin($('#pin11'), {
         top_spacing: 150,
         contain: true
@@ -59,5 +63,39 @@ $(document).ready(function () {
 
     const pin66 = new $.Zebra_Pin($('#pin66'), {
         top_spacing: 150,
+    });
+
+    const pin77 = new $.Zebra_Pin($('#pin77'), {
+        top_spacing: 150,
+    });
+
+    const pin111 = new $.Zebra_Pin($('#pin111'), {
+        top_spacing: 132,
+        contain: true
+    });
+
+    const pin222 = new $.Zebra_Pin($('#pin222'), {
+        top_spacing: 132,
+        contain: true
+    });
+    const pin333 = new $.Zebra_Pin($('#pin333'), {
+        top_spacing: 132,
+        contain: true
+    });
+    const pin444 = new $.Zebra_Pin($('#pin444'), {
+        top_spacing: 132,
+        contain: true
+    });
+    const pin555 = new $.Zebra_Pin($('#pin555'), {
+        top_spacing: 132,
+        contain: true
+    });
+
+    const pin666 = new $.Zebra_Pin($('#pin666'), {
+        top_spacing: 132,
+    });
+
+    const pin777 = new $.Zebra_Pin($('#pin777'), {
+        top_spacing: 132,
     });
 });

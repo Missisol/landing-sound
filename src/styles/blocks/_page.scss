@@ -31,7 +31,7 @@
 }
 
 .subtitle {
-  position: absolute;
+  position: relative;
 
   @include desktop {
     @include subtitle;
@@ -45,7 +45,7 @@
     @include subtitle-phone;
   }
 
-  &__fixed {
+  &_fixed {
     position: relative;
     z-index: 100;
 
@@ -56,9 +56,12 @@
     @include tablet {
       margin-top: 90px;
     }
+
+    @include phone {
+      margin-top: 100px;
+    }
   }
 }
-
 
 .links {
   display: flex;
