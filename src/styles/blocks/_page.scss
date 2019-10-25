@@ -14,7 +14,6 @@
   height: 100%;
   background: url(../assets/images/bcg-image.jpg) no-repeat;
   background-size: cover;
-  //transition: opacity 0.5s ease-in-out;
 }
 
 .content {
@@ -40,24 +39,13 @@
 
   &_fixed {
     position: relative;
-    //position: fixed;
     margin-top: 447px;
-    //top: 447px;
-    //left: calc((100% - #{$desktop-container}) / 2);
     z-index: 100;
 
     @include tablet {
       margin-top: 90px;
-      //left: calc((100% - #{$tablet-container}) / 2);
     }
   }
-
-  //&_you {
-  //
-  //  @include desktop {
-  //    //width: 420px;
-  //  }
-  //}
 }
 
 .links {

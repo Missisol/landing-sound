@@ -45,6 +45,14 @@
     &:hover .big-text__arrow-wrap {
       z-index: 10;
     }
+
+    @include tablet {
+      flex-direction: column;
+
+      &:hover .big-text {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__image-wrap {
@@ -59,8 +67,8 @@
     }
 
     @include tablet {
-      top: 0;
-      right: 0;
+      flex-direction: column;
+      margin-bottom: 30px;
     }
   }
 
@@ -68,6 +76,13 @@
     margin-left: 8px;
     font-size: 18px;
     line-height: 17px;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 10px 0 0;
+      padding-right: 70px;
+    }
   }
 }
 
