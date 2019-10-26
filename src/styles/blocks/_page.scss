@@ -48,6 +48,7 @@
   &_fixed {
     position: relative;
     z-index: 100;
+    width: 35%;
 
     @include desktop {
       margin-top: 447px;

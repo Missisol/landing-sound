@@ -6,6 +6,7 @@
   @include title;
   cursor: pointer;
   transition: 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @include desktop {
     font-size: 72px;
@@ -32,10 +33,6 @@
     }
   }
 
-  &:hover {
-    text-decoration-line: underline;
-  }
-
   &__arrow-wrap {
     position: absolute;
     top: 27%;
@@ -47,27 +44,78 @@
     position: relative;
     display: flex;
 
-    &:hover .big-text__image-wrap {
-      display: flex;
-    }
+    @include desktop {
+      &:focus .big-text {
+        text-decoration-line: underline;
+      }
 
-    &:hover .big-text__arrow-wrap {
-      z-index: 10;
+      &:focus .big-text__image-wrap {
+        display: flex;
+      }
+
+      &:focus .big-text__arrow-wrap {
+        z-index: 10;
+      }
+
+      @media (hover), (min--moz-device-pixel-ratio:0) {
+
+        &:hover .big-text {
+          text-decoration-line: underline;
+        }
+
+        &:hover .big-text__image-wrap {
+          display: flex;
+        }
+
+        &:hover .big-text__arrow-wrap {
+          z-index: 10;
+        }
+      }
     }
 
     @include tablet {
       flex-direction: column;
 
-      &:hover .big-text {
+      &:focus {
+        outline: transparent;
+      }
+
+      &:focus .big-text {
+        text-decoration-line: underline;
         margin-bottom: 20px;
+      }
+
+      &:focus .big-text__image-wrap {
+        display: flex;
+      }
+
+      @media (hover), (min--moz-device-pixel-ratio:0) {
+
+        &:hover .big-text {
+          text-decoration-line: underline;
+          margin-bottom: 20px;
+        }
+
+        &:hover .big-text__image-wrap {
+          display: flex;
+        }
       }
     }
 
     @include phone {
       flex-direction: column;
 
-      &:hover .big-text {
-        margin-bottom: 6px;
+      &:focus {
+        outline: transparent;
+      }
+
+      &:focus .big-text {
+        text-decoration-line: underline;
+        margin-bottom: 20px;
+      }
+
+      &:focus .big-text__image-wrap {
+        display: flex;
       }
     }
   }
