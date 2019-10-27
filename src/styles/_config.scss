@@ -53,11 +53,11 @@ a:link {
   }
 
   @include tablet() {
-    max-width: $tablet-container;
+    max-width: 80%;
   }
 
   @include phone() {
-    max-width: $phone-container;
+    max-width: 90%;
   }
 }
 

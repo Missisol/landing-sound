@@ -12,29 +12,14 @@
 
     @include desktop {
       margin-bottom: 880px;
-
-      &_tablet,
-      &_phone {
-        display: none;
-      }
     }
 
     @include tablet {
       margin-bottom: 270px;
-
-      &_desktop,
-      &_phone {
-        display: none;
-      }
     }
 
     @include phone {
       margin-bottom: 140px;
-
-      &_desktop,
-      &_tablet {
-        display: none;
-      }
     }
   }
 
@@ -42,29 +27,14 @@
 
     @include desktop {
       margin-bottom: 450px;
-
-      &_tablet,
-      &_phone {
-        display: none;
-      }
     }
 
     @include tablet {
       margin-bottom: 346px;
-
-      &_desktop,
-      &_phone{
-        display: none;
-      }
     }
 
     @include phone {
       margin-bottom: 180px;
-
-      &_desktop,
-      &_tablet {
-        display: none;
-      }
     }
   }
 
@@ -72,29 +42,14 @@
 
     @include desktop {
       margin-bottom: 835px;
-
-      &_tablet,
-      &_phone {
-        display: none;
-      }
     }
 
     @include tablet {
       margin-bottom: 600px;
-
-      &_desktop,
-      &_phone{
-        display: none;
-      }
     }
 
     @include phone {
       margin-bottom: 48px;
-
-      &_desktop,
-      &_tablet {
-        display: none;
-      }
     }
   }
 
@@ -102,29 +57,14 @@
 
     @include desktop {
       margin-bottom: 350px;
-
-      &_tablet,
-      &_phone {
-        display: none;
-      }
     }
 
     @include tablet {
       margin-bottom: 448px;
-
-      &_desktop,
-      &_phone{
-        display: none;
-      }
     }
 
     @include phone {
       margin-bottom: 90px;
-
-      &_desktop,
-      &_tablet {
-        display: none;
-      }
     }
   }
 
@@ -132,29 +72,14 @@
 
     @include desktop {
       margin-bottom: 560px;
-
-      &_tablet,
-      &_phone {
-        display: none;
-      }
     }
 
     @include tablet {
       margin-bottom: 474px;
-
-      &_desktop,
-      &_phone{
-        display: none;
-      }
     }
 
     @include phone {
       margin-bottom: 200px;
-
-      &_desktop,
-      &_tablet {
-        display: none;
-      }
     }
   }
 
@@ -162,26 +87,13 @@
     margin-bottom: 483px;
 
     @include desktop {
-      &_tablet,
-      &_phone {
-        display: none;
-      }
     }
 
     @include tablet {
-      &_desktop,
-      &_phone{
-        display: none;
-      }
     }
 
     @include phone {
       margin-bottom: 500px;
-
-      &_desktop,
-      &_tablet {
-        display: none;
-      }
     }
   }
 }
