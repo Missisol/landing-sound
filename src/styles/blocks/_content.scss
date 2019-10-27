@@ -84,17 +84,7 @@
   }
 
   &__you {
-    margin-bottom: 483px;
-
-    @include desktop {
-    }
-
-    @include tablet {
-    }
-
-    @include phone {
-      margin-bottom: 500px;
-    }
+    height: 100vh;
   }
 }
 
