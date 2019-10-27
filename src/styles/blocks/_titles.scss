@@ -38,6 +38,14 @@
     top: 27%;
     right: 44%;
     mix-blend-mode: difference;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__wrap {
@@ -134,11 +142,38 @@
     @include tablet {
       flex-direction: column;
       margin-bottom: 30px;
+      max-width: 448px;
     }
 
     @include phone {
       flex-direction: column;
       margin-bottom: 30px;
+      max-width: 141px;
+    }
+  }
+
+  &__image {
+      max-width: 100%;
+
+    @include desktop {
+      &_tablet,
+      &_phone {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      &_desktop,
+      &_phone {
+        display: none;
+      }
+    }
+
+    @include phone {
+      &_tablet,
+      &_desktop {
+        display: none;
+      }
     }
   }
 

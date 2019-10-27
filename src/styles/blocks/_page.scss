@@ -79,13 +79,13 @@
   @include tablet {
     flex-direction: column-reverse;
     bottom: 9%;
-    left: calc((100% - #{$tablet-container}) / 2);
+    left: 10%;
   }
 
   @include phone {
     flex-direction: column-reverse;
     bottom: 9%;
-    left: calc((100% - #{$phone-container}) / 2);
+    left: 10%;
   }
 
   &__right {
