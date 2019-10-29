@@ -72,7 +72,7 @@ $(document).ready(function () {
         });
 
         new $.Zebra_Pin($('#pin7'), {
-            top_spacing: 150,
+            top_spacing: 40,
         });
     } else if (document.documentElement.clientWidth < 1024) {
 
