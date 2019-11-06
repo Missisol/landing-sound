@@ -20,10 +20,8 @@ function cross(elem) {
 
         if (elemTop <= fixedBottom && elemBottom >= fixedTop) {
             bcgImage.classList.remove('invisible');
-            elem.classList.add('invisible');
         } else {
             bcgImage.classList.add('invisible');
-            elem.classList.remove('invisible');
         }
 }
 

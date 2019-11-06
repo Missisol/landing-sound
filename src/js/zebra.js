@@ -17,12 +17,6 @@ $(document).ready(function () {
             top_spacing: 527,
             contain: true
         });
-
-        new $.Zebra_Pin($('#pin3'), {
-            top_spacing: 527,
-            contain: true
-        });
-
         new $.Zebra_Pin($('#pin4'), {
             top_spacing: 527,
             contain: true
@@ -52,11 +46,6 @@ $(document).ready(function () {
             contain: true
         });
 
-        new $.Zebra_Pin($('#pin3'), {
-            top_spacing: 150,
-            contain: true
-        });
-
         new $.Zebra_Pin($('#pin4'), {
             top_spacing: 150,
             contain: true
@@ -82,11 +71,6 @@ $(document).ready(function () {
         });
 
         new $.Zebra_Pin($('#pin2'), {
-            top_spacing: 132,
-            contain: true
-        });
-
-        new $.Zebra_Pin($('#pin3'), {
             top_spacing: 132,
             contain: true
         });
