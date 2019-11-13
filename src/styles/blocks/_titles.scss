@@ -10,24 +10,28 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @include desktop {
-    font-size: 72px;
-    margin-bottom: 0.6em;
+    font-size: 70px;
+    margin-bottom: 30px;
   }
 
   @include tablet {
     font-size: 36px;
-    margin-bottom: 85px;
+    margin-bottom: 20px;
   }
 
   @include phone {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include desktop {
+      margin-top: -412px;
+    }
 
     @include phone {
       padding-top: 20px;
@@ -36,8 +40,8 @@
 
   &__arrow-wrap {
     position: absolute;
-    top: 27%;
-    right: 44%;
+    top: 0;
+    right: 0;
     mix-blend-mode: difference;
 
     @include tablet {
@@ -52,8 +56,11 @@
   &__wrap {
     position: relative;
     display: flex;
+    flex-direction: column;
 
     @include desktop {
+      margin-bottom: 66px;
+
       &:focus .big-text {
         text-decoration-line: underline;
       }
@@ -84,58 +91,29 @@
 
     @include tablet {
       flex-direction: column;
-
-      &:focus {
-        outline: transparent;
-      }
-
-      &:focus .big-text {
-        text-decoration-line: underline;
-        margin-bottom: 20px;
-      }
-
-      &:focus .big-text__image-wrap {
-        display: flex;
-      }
-
-      @media (hover), (min--moz-device-pixel-ratio:0) {
-
-        &:hover .big-text {
-          text-decoration-line: underline;
-          margin-bottom: 20px;
-        }
-
-        &:hover .big-text__image-wrap {
-          display: flex;
-        }
-      }
+      margin-bottom: 20px;
     }
 
     @include phone {
       flex-direction: column;
+      margin-bottom: 20px;
+    }
 
-      &:focus {
-        outline: transparent;
-      }
+    &_tele {
 
-      &:focus .big-text {
-        text-decoration-line: underline;
-        margin-bottom: 20px;
-      }
-
-      &:focus .big-text__image-wrap {
-        display: flex;
+      @include desktop {
+        margin-bottom: 0;
       }
     }
   }
 
   &__image-wrap {
-    display: none;
 
     @include desktop {
+      display: none;
       position: absolute;
-      right: -346px;
-      top: -70px;
+      right: -150px;
+      top: 10px;
       max-width: 460px;
       align-items: flex-end;
     }
@@ -154,9 +132,13 @@
   }
 
   &__image {
-      width: 100%;
 
     @include desktop {
+      width: 209px;
+      position: absolute;
+      top: 0;
+      right: 40px;
+
       &_tablet,
       &_phone {
         display: none;
@@ -179,23 +161,29 @@
   }
 
   &__image-text {
-    margin-left: 8px;
-    font-size: 18px;
-    line-height: 17px;
+    position: relative;
+    z-index: 10;
     mix-blend-mode: difference;
     color: #ffffff;
 
     @include tablet {
-      font-size: 14px;
-      line-height: 18px;
-      margin: 10px 0 0;
-      padding-right: 70px;
+      margin-bottom: 20px;
     }
 
     @include phone {
-      font-size: 13px;
-      line-height: 18px;
-      margin: 10px 0 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link-project {
+    mix-blend-mode: difference;
+    color: $color-white;
+
+    @include desktop {
+
+      &_narrow {
+        width: 60%;
+      }
     }
   }
 }

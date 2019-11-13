@@ -3,15 +3,27 @@
 .right-block {
   flex: 1;
 
-  @include phone {
-    max-width: 53%;
+  &__media {
+
+    @include desktop {
+      padding-top: 159px;
+    }
+
+    @include phone {
+      max-width: 53%;
+      margin-top: -50px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
   }
 
   &__singletext {
     font-weight: 600;
     font-size: 36px;
     line-height: 45px;
-    color: $color-text;
+    color: $color-black;
 
     @include tablet {
       font-size: 28px;
@@ -24,7 +36,7 @@
     }
 
     &_media {
-      padding-top: 159px;
+      padding-top: 280px;
 
       @include tablet {
         padding-top: 140px;
@@ -37,31 +49,55 @@
   }
 
   &__sound {
-    display: flex;
-    flex-direction: column;
-
+    padding-top: 0;
   }
 
-  &__podсast {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 38px;
+  &__bold {
+    display: inline-block;
+    color: $color-black;
+    text-decoration: underline;
+    font-weight: 600;
+  }
 
-    @include phone {
-      flex-direction: column;
-      padding-top: 10px;
+  &__sound {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__podcast {
+
+    @include desktop {
+      margin-top: -253px;
     }
   }
 
   &__you {
-    font-size: 64px;
-    line-height: 80px;
-    color: $color-text;
+
+    @include desktop {
+      padding-top: 0;
+    }
 
     @include phone {
       font-size: 14px;
       line-height: 18px;
       font-weight: 600;
+    }
+  }
+
+  &__text-link {
+    @include druk;
+    font-size: 64px;
+    line-height: 78px;
+    font-weight: 500;
+    color: $color-black;
+
+    @include desktop {
+      margin-bottom: 22px;
+    }
+
+    @include phone {
+      font-size: 16px;
+      line-height: 40px;
     }
   }
 
@@ -82,10 +118,14 @@
     @include phone {
       margin-bottom: 40px;
     }
+
+    &_design,
+    &_podcast {
+      margin-bottom: 0;
+    }
   }
 
   &__item-title {
-    text-transform: capitalize;
     @include title;
 
     @include desktop {

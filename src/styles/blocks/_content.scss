@@ -11,7 +11,7 @@
   &__media {
 
     @include desktop {
-      margin-bottom: 880px;
+      margin-bottom: 328px;
     }
 
     @include tablet {
@@ -26,7 +26,7 @@
   &__sound {
 
     @include desktop {
-      margin-bottom: 450px;
+      margin-bottom: 572px;
     }
 
     @include tablet {
@@ -56,7 +56,7 @@
   &__podcast {
 
     @include desktop {
-      margin-bottom: 350px;
+      margin-bottom: 732px;
     }
 
     @include tablet {
@@ -71,7 +71,7 @@
   &__project {
 
     @include desktop {
-      margin-bottom: 560px;
+      margin-bottom: 500px;
     }
 
     @include tablet {
@@ -92,28 +92,49 @@
   min-width: 35%;
   position: relative;
 
+  @include phone {
+    min-width: 50%;
+  }
+
+  &_media {
+    padding-top: 408px;
+  }
+
   &__sound {
 
     @include desktop {
-      padding-top: 145px;
+      padding-top: 45px;
+    }
+
+    @include tablet {
+      padding-top: 18px;
+    }
+  }
+
+  &__podcast {
+
+    @include desktop {
+    }
+
+    @include tablet {
+      padding-top: 150px;
     }
   }
 
   &__project {
 
     @include desktop {
-      padding-top: 348px;
     }
 
     @include tablet {
-      padding-top: 16px;
+      padding-top: 300px;
     }
   }
 
   &__you {
 
     @include desktop {
-      padding-top: 50px;
+      padding-top: 150px;
     }
 
     @include tablet {
