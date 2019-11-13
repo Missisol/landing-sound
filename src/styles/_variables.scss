@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url(../assets/fonts/SourceSansPro-Regular.ttf) format('ttf');
+  src: url('../assets/fonts/SourceSansPro-Regular.ttf') format('ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url(../assets/fonts/SourceSansPro-SemiBold.ttf) format('ttf');
+  src: url('../assets/fonts/SourceSansPro-SemiBold.ttf') format('ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Druk Wide Medium';
   src: local('Druk Wide Medium'),
-          url(../assets/fonts/Druk Wide-Medium-Web.woff2) format('woff2'),
-          url(../assets/fonts/Druk Wide-Medium-Web.woff) format('woff'),
-          url(../assets/fonts/Druk Wide-Medium-Web.ttf) format('ttf'),
-          url(../assets/fonts/Druk Wide-Medium-Web.eot) format('eot');
+          url('../assets/fonts/Druk Wide-Medium-Web.woff2') format('woff2'),
+          url('../assets/fonts/Druk Wide-Medium-Web.woff') format('woff'),
+          url('../assets/fonts/Druk Wide-Medium-Web.ttf') format('ttf'),
+          url('../assets/fonts/Druk Wide-Medium-Web.eot') format('eot');
 }
 
 //
