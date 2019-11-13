@@ -32,7 +32,7 @@ $(document).ready(function () {
         });
 
         new $.Zebra_Pin($('#pin7'), {
-            top_spacing: 527,
+            top_spacing: 377,
         });
     } else if (document.documentElement.clientWidth < 1400 && document.documentElement.clientWidth > 1024) {
 
@@ -61,7 +61,7 @@ $(document).ready(function () {
         });
 
         new $.Zebra_Pin($('#pin7'), {
-            top_spacing: 40,
+            top_spacing: 150,
         });
     } else if (document.documentElement.clientWidth < 1024) {
 

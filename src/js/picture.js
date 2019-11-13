@@ -10,8 +10,8 @@ $(document).ready(function () {
             const image = $(wrap).find('.big-text__image-wrap');
             if (image && $(image).css('display') !== 'none') {
 
-                let elOffset = wrap.position().left;
-                $(image).css({left: e.clientX - elOffset - 346, top: -70});
+                let elLeftPosition = wrap.position().left;
+                $(image).css({left: e.clientX - elLeftPosition - 570, top: 10});
             }
         });
     })
