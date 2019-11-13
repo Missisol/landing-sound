@@ -12,7 +12,11 @@
 
 @font-face {
   font-family: 'Druk Wide Medium';
-  src: url(../assets/fonts/Druk_Wide_Medium_Cy.otf) format('opentype');
+  src: local('Druk Wide Medium'),
+          url(../assets/fonts/Druk Wide-Medium-Web.woff2) format('woff2'),
+          url(../assets/fonts/Druk Wide-Medium-Web.woff) format('woff'),
+          url(../assets/fonts/Druk Wide-Medium-Web.ttf) format('ttf'),
+          url(../assets/fonts/Druk Wide-Medium-Web.eot) format('eot');
 }
 
 //
