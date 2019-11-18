@@ -35,6 +35,9 @@ $(document).ready(function () {
             top_spacing: 377,
         });
     } else if (document.documentElement.clientWidth < 1400 && document.documentElement.clientWidth > 1024) {
+        window.addEventListener('orientationchange', function () {
+            location.reload();
+        });
 
         new $.Zebra_Pin($('#pin1'), {
             top_spacing: 150,
@@ -64,6 +67,9 @@ $(document).ready(function () {
             top_spacing: 150,
         });
     } else if (document.documentElement.clientWidth < 1024) {
+        window.addEventListener('orientationchange', function () {
+            location.reload();
+        });
 
         new $.Zebra_Pin($('#pin1'), {
             top_spacing: 132,

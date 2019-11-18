@@ -86,8 +86,8 @@
 
   &__text-link {
     @include druk;
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 36px;
+    line-height: 54px;
     font-weight: 500;
     color: $color-black;
 
@@ -96,7 +96,7 @@
     }
 
     @include phone {
-      font-size: 16px;
+      font-size: 12px;
       line-height: 40px;
     }
   }
@@ -135,7 +135,7 @@
     }
 
     @include tablet {
-      font-size: 37px;
+      font-size: 36px;
       line-height: 45px;
       margin-bottom: 10px;
     }

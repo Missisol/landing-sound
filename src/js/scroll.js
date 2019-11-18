@@ -11,4 +11,7 @@
             $('body, html').animate({scrollTop: top}, 1000);
         })
     })
+
 })(jQuery);
+
+

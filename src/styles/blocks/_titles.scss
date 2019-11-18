@@ -10,7 +10,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   @include desktop {
-    font-size: 70px;
+    font-size: 64px;
     margin-bottom: 30px;
   }
 
@@ -20,7 +20,7 @@
   }
 
   @include phone {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
